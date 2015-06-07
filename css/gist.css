@@ -3,3 +3,325 @@
 *	@author: Pranav Rele, https://github.com/pranavrele
 *	@version: 0.1
 */
+
+body
+{
+	color: #666666;
+	font-size: 13px;
+	line-height: 23px;
+	
+	background-image: url('/img/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;     
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	margin: 2px 0px;
+	padding: 0px;
+}
+
+h1 
+{
+	font-size: 30px;
+	line-height: 45px;
+}
+
+h2
+{
+	font-size: 25px;
+	line-height: 40px;
+}
+
+h3 
+{
+	font-size: 22px;
+	line-height: 37px;
+}
+
+h4 
+{
+	font-size: 18px;
+	line-height: 33px;
+}
+
+h5 
+{
+	font-size: 15px;
+	line-height: 30px;
+}
+
+h6 
+{
+	font-size: 13px;
+	line-height: 28px;
+}
+
+p 
+{
+	margin: 2px 0px;
+	padding: 0px;
+	margin-bottom:5px;
+	line-height:28px;
+}
+
+a
+{
+	text-decoration: none;
+	color: #777;
+}
+
+a:hover,
+a:active,
+a:focus
+{
+	outline: 0;
+	text-decoration: none;
+	color: #999;
+}
+
+hr
+{
+	margin: 10px 0px;
+	padding: 0px;
+	border-top: 0px;
+	border-bottom: 1px solid #eee;
+}
+
+:focus
+{
+	outline: none;
+}
+
+::moz-focus-innner
+{
+	border: 0;
+}
+
+/* Text Color Palette */
+
+.white
+{
+	color: #ffffff !important;
+}
+
+.grey
+{
+	color: #727272 !important;
+}
+
+.black
+{
+	color: #212121 !important;
+}
+
+.red
+{
+	color: #f44336 !important;
+}
+
+.green
+{
+	color: #4caf50 !important;
+}
+
+.blue
+{
+	color: #2196f3 !important;
+}
+
+.orange
+{
+	color: #ff9800 !important;
+}
+
+.yellow
+{
+	color: #ffeb3b !important;
+}
+
+.purple
+{
+	color: #673ab7 !important;
+}
+
+.brown
+{
+	color: #795548 !important;
+}
+
+.cyan
+{
+	color: #00bcd4 !important;
+}
+
+/* Background Color Palette */
+
+.bg-white
+{
+	color: #ffffff !important;
+}
+
+.bg-grey
+{
+	color: #727272 !important;
+}
+
+.bg-black
+{
+	color: #212121 !important;
+}
+
+.bg-red
+{
+	color: #f44336 !important;
+}
+
+.bg-green
+{
+	color: #4caf50 !important;
+}
+
+.bg-blue
+{
+	color: #2196f3 !important;
+}
+
+.bg-orange
+{
+	color: #ff9800 !important;
+}
+
+.bg-yellow
+{
+	color: #ffeb3b !important;
+}
+
+.bg-purple
+{
+	color: #673ab7 !important;
+}
+
+.bg-brown
+{
+	color: #795548 !important;
+}
+
+.bg-cyan
+{
+	color: #00bcd4 !important;
+}
+
+/* Border Color Palette */
+
+.br-white
+{
+	border: 1px solid #ffffff !important;
+}
+
+.br-grey
+{
+	border: 1px solid #727272 !important;
+}
+
+.br-black
+{
+	border: 1px solid #212121 !important;
+}
+
+.br-red
+{
+	border: 1px solid #f44336 !important;
+}
+
+.br-green
+{
+	border: 1px solid #4caf50 !important;
+}
+
+.br-blue
+{
+	border: 1px solid #2196f3 !important;
+}
+
+.br-orange
+{
+	border: 1px solid #ff9800 !important;
+}
+
+.br-yellow
+{
+	border: 1px solid #ffeb3b !important;
+}
+
+.br-purple
+{
+	border: 1px solid #673ab7 !important;
+}
+
+.br-brown
+{
+	border: 1px solid #795548 !important;
+}
+
+.br-cyan
+{
+	border: 1px solid #00bcd4 !important;
+}
+
+/* Button Schematic */
+
+.btn
+{
+	border-radius: 2px;
+	position: relative;
+}
+
+.btn.btn-no-border
+{
+	border: 0px !important;
+}
+
+/* Button Color Palette */
+
+.btn.btn-white
+{
+	background: #ffffff;
+	color: #666666;
+	border: 1px solid #dddddd;
+}
+
+.btn.btn-white:hover,
+.btn.btn-white:focus,
+.btn.btn-white.active,
+.btn.btn-white:active
+{
+	background: #f7f7f7;
+	color: #666666;
+}
+
+
+
+
+
+
+
+
+
+
