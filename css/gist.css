@@ -171,6 +171,16 @@ hr
 	color: #00bcd4 !important;
 }
 
+.lblue
+{
+	color: #03a9f4 !important;
+}
+
+.pink
+{
+	color: #e91e63 !important;
+}
+
 /* Background Color Palette */
 
 .bg-white
@@ -228,6 +238,16 @@ hr
 	color: #00bcd4 !important;
 }
 
+.bg-lblue
+{
+	color: #03a9f4 !important;
+}
+
+.bg-pink
+{
+	color: #e91e63 !important;
+}
+
 /* Border Color Palette */
 
 .br-white
@@ -283,6 +303,16 @@ hr
 .br-cyan
 {
 	border: 1px solid #00bcd4 !important;
+}
+
+.br-lblue
+{
+	border: 1px solid #03a9f4 !important;
+}
+
+.br-pink
+{
+	border: 1px solid #e91e63 !important;
 }
 
 /* Button Schematic */
@@ -476,6 +506,38 @@ hr
 	background: #0097a7;
 }
 
+.btn.btn-lblue
+{
+	color: #ffffff;
+	background: #03a9f4;
+	border: 1 px solid #0288d1;
+}
+
+.btn.btn-lblue:hover,
+.btn.btn-lblue:focus,
+.btn.btn-lblue.active,
+.btn.btn-lblue:active
+{
+	color: #ffffff;
+	background: #0288d1;
+}
+
+.btn.btn-pink
+{
+	color: #ffffff;
+	background: #e91e63;
+	border: 1 px solid #c2185b;
+}
+
+.btn.btn-pink:hover,
+.btn.btn-pink:focus,
+.btn.btn-pink.active,
+.btn.btn-pink:active
+{
+	color: #ffffff;
+	background: #c2185b;
+}
+
 /* Label Schematic */
 
 .label.label-xs
@@ -567,5 +629,157 @@ hr
 	background: #00bcd4;
 }
 
+.label.label-lblue
+{
+	color: #ffffff;
+	background: #03a9f4;
+}
 
+.label.label-pink
+{
+	color: #ffffff;
+	background: #e91e63;
+}
+
+/* Social Network Color Palette */
+
+.facebook
+{
+	background: #2196f3;
+}
+
+.facebook:hover
+{
+	background: #1976d2;
+}
+
+.twitter
+{
+	background: #03a9f4;
+}
+
+.twitter:hover
+{
+	background: #0288d1;
+}
+
+.google-plus
+{
+	background: #ff9800;
+}
+
+.google-plus:hover
+{
+	background: #f57c00;
+}
+
+.linkedin
+{
+	background: #2196f3;
+}
+
+.linkedin:hover
+{
+	background: #1976d2;
+}
+
+.pinterest
+{
+	background: #f44336;
+}
+
+.pinterest:hover
+{
+	background: #d32f2f;
+}
+
+.dropbox
+{
+	background: #03a9f4;
+}
+
+.dropbox:hover
+{
+	background: #0288d1;
+}
+
+.flickr
+{
+	background: #e91e63;
+}
+
+.flickr:hover
+{
+	background: #c2185b;
+}
+
+.github
+{
+	background: #212121;
+}
+
+.github:hover
+{
+	background: #000000;
+}
+
+.instagram
+{
+	background: #795548;
+}
+
+.instagram:hover
+{
+	background: #5d4037;
+}
+
+.skype
+{
+	background: #03a9f4;
+}
+
+.skype:hover
+{
+	background: #0288d1;
+}
+
+.tumblr
+{
+	background: #673ab7;
+}
+
+.tumblr:hover
+{
+	background: #512da8;
+}
+
+.vimeo
+{
+	background: #03a9f4;
+}
+
+.vimeo:hover
+{
+	background: #0288d1;
+}
+
+.dribble
+{
+	background: #e91e63;
+}
+
+.dribble:hover
+{
+	background: #c2185b;
+}
+
+.youtube
+{
+	background: #f44336;
+}
+
+.youtube:hover
+{
+	background: #d32f2f;
+}
 
