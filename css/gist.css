@@ -11,7 +11,7 @@ body {
 	background: #fff;
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	background-image: url('/img/background.jpg');
+	background-image: url('/img/background.jpg'); /* Insert Background Image */
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -86,19 +86,19 @@ a:hover, a:active, a:focus {
 	border: 0;
 }
 
-/* Left */
+/* Main */
 
-.left {
-	margin: 50px 0px;
+.main {
+	margin: 180px 0px;
 	padding: 50px 0px 0px 0px;
 }
 
-.left .outer-ring {
+.main .outer-ring {
 	max-width: 350px;
 	margin: 20px auto;
 }
 
-.left .orbital .satellites {
+.main .orbital .satellites {
 	position: absolute;
 	display: block;
 	padding: 0px;
@@ -108,15 +108,15 @@ a:hover, a:active, a:focus {
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 
-.left .orbital .satellites.s-one { top: 0%; right: 50%; margin-right: -25px }
-.left .orbital .satellites.s-two { top: 50%; right: 0%; margin-right: -25px }
-.left .orbital .satellites.s-three { top: 100%; right: 50%; margin-right: -25px }
-.left .orbital .satellites.s-four { top: 50%; left: 0%; margin-left: -25px }
-.left .orbital .satellites.s-five { top: 85%; right: 14%; margin-right: -25px }
-.left .orbital .satellites.s-six { top: 15%; right: 14%; margin-right: -25px }
-.left .orbital .satellites.s-seven { top: 15%; left: 14%; margin-left: -25px }
-.left .orbital .satellites.s-eight { top: 85%; left: 14%; margin-left: -25px }
-.left .orbital a > i {
+.main .orbital .satellites.s-one { top: 0%; right: 50%; margin-right: -25px } /* North */
+.main .orbital .satellites.s-two { top: 50%; right: 0%; margin-right: -25px } /* East */
+.main .orbital .satellites.s-three { top: 100%; right: 50%; margin-right: -25px } /* South */
+.main .orbital .satellites.s-four { top: 50%; left: 0%; margin-left: -25px } /* West */
+.main .orbital .satellites.s-five { top: 85%; right: 14%; margin-right: -25px } /* South East */
+.main .orbital .satellites.s-six { top: 15%; right: 14%; margin-right: -25px } /* North East */
+.main .orbital .satellites.s-seven { top: 15%; left: 14%; margin-left: -25px } /* North West */
+.main .orbital .satellites.s-eight { top: 85%; left: 14%; margin-left: -25px } /* South West */
+.main .orbital a > i {
 	width: 40px;
 	height: 40px;
 	background: #fff;
@@ -132,11 +132,11 @@ a:hover, a:active, a:focus {
 	transition: all 1s;
 }
 
-.left .orbital a:hover > i {
+.main .orbital a:hover > i {
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-.left .outer-ring .inner-ring {
+.main .outer-ring .inner-ring {
 	position: relative;
 	max-width: 350px;
 	padding: 50px;
@@ -144,7 +144,7 @@ a:hover, a:active, a:focus {
 	border-radius: 50%;
 }
 
-.left .inner-ring .central {
+.main .inner-ring .central {
 	position: relative;
 	width: 240px;
 	height: 240px;
@@ -155,137 +155,225 @@ a:hover, a:active, a:focus {
 	text-align: center;
 }
 
-.left .inner-ring .central img {
+.main .inner-ring .central img {
 	width: 100%;
 	max-width: 240px;
 	margin: 0px auto;
 }
 
+/* Responsive */
+
 @media (max-width: 767px) {
-	.left .satellites {
+	.main .satellites {
 		margin-bottom: 30px;
 		text-align: center;
 	}
 	
-	.left .orbital .satellites {
+	.main .orbital .satellites {
 		position: static;
 		display: inline-block;
 		margin: 6px !important;
 	}
 	
-	.left .outer-ring .inner-ring {
+	.main .outer-ring .inner-ring {
 		padding: 0px 0px 0px 10px;
 		border: 0;
 	}
 	
-	.left .inner-ring .central {
+	.main .inner-ring .central {
 		max-width: 260px;
 		bottom: 10px;
-	}	
+	}
+	
+	.tooltip {
+    visibility: hidden !important;
+}
+	
 }
 
 /* Social Media Buttons */
 
-.left .orbital a > i.btn-facebook { color: #134fa0 }
-.left .orbital a:hover > i.btn-facebook {
+.main .orbital a > i.btn-facebook { color: #134fa0 }
+.main .orbital a:hover > i.btn-facebook {
 	background: #134fa0;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-twitter { color: #32c8de }
-.left .orbital a:hover > i.btn-twitter {
+.main .orbital a > i.btn-twitter { color: #32c8de }
+.main .orbital a:hover > i.btn-twitter {
 	background: #32c8de;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-google-plus { color: #eb6440 }
-.left .orbital a:hover > i.btn-google-plus {
+.main .orbital a > i.btn-google-plus { color: #eb6440 }
+.main .orbital a:hover > i.btn-google-plus {
 	background: #eb6440;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-linkedin { color: #3069b6 }
-.left .orbital a:hover > i.btn-linkedin {
+.main .orbital a > i.btn-linkedin { color: #3069b6 }
+.main .orbital a:hover > i.btn-linkedin {
 	background: #3069b6;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-pinterest { color: #b72411 }
-.left .orbital a:hover > i.btn-pinterest {
+.main .orbital a > i.btn-pinterest { color: #b72411 }
+.main .orbital a:hover > i.btn-pinterest {
 	background: #b72411;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-dropbox { color: #32c8de }
-.left .orbital a:hover > i.btn-dropbox {
+.main .orbital a > i.btn-dropbox { color: #32c8de }
+.main .orbital a:hover > i.btn-dropbox {
 	background: #32c8de;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-bitcoin { color: #f8a841 }
-.left .orbital a:hover > i.btn-bitcoin {
+.main .orbital a > i.btn-bitcoin { color: #f8a841 }
+.main .orbital a:hover > i.btn-bitcoin {
 	background: #f8a841;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-foursquare { color: #22bed4 }
-.left .orbital a:hover > i.btn-foursquare {
+.main .orbital a > i.btn-foursquare { color: #22bed4 }
+.main .orbital a:hover > i.btn-foursquare {
 	background: #22bed4;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-flickr { color: #fa00d4 }
-.left .orbital a:hover > i.btn-flickr {
+.main .orbital a > i.btn-flickr { color: #fa00d4 }
+.main .orbital a:hover > i.btn-flickr {
 	background: #fa00d4;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-github { color: #333333 }
-.left .orbital a:hover > i.btn-github {
+.main .orbital a > i.btn-github { color: #333333 }
+.main .orbital a:hover > i.btn-github {
 	background: #333333;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-instagram { color: #b35637 }
-.left .orbital a:hover > i.btn-instagram {
+.main .orbital a > i.btn-instagram { color: #b35637 }
+.main .orbital a:hover > i.btn-instagram {
 	background: #b35637;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-skype { color: #32c8de }
-.left .orbital a:hover > i.btn-skype {
+.main .orbital a > i.btn-skype { color: #32c8de }
+.main .orbital a:hover > i.btn-skype {
 	background: #32c8de;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-tumblr { color: #476d9f }
-.left .orbital a:hover > i.btn-tumblr {
+.main .orbital a > i.btn-tumblr { color: #476d9f }
+.main .orbital a:hover > i.btn-tumblr {
 	background: #476d9f;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-vimeo { color: #32c8de }
-.left .orbital a:hover > i.btn-vimeo {
+.main .orbital a > i.btn-vimeo { color: #32c8de }
+.main .orbital a:hover > i.btn-vimeo {
 	background: #32c8de;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-dribbble { color: #ff2edf }
-.left .orbital a:hover > i.btn-dribbble {
+.main .orbital a > i.btn-dribbble { color: #ff2edf }
+.main .orbital a:hover > i.btn-dribbble {
 	background: #ff2edf;
 	color: #fff;
 }
 
-.left .orbital a > i.btn-youtube { color: #b72411 }
-.left .orbital a:hover > i.btn-youtube {
+.main .orbital a > i.btn-youtube { color: #b72411 }
+.main .orbital a:hover > i.btn-youtube {
 	background: #b72411;
 	color: #fff;
 }
 
 
+/* Tooltips */
 
+.tooltip {
+    position:absolute;
+    z-index:1020;
+    display:block;
+    visibility:visible;
+    padding:5px;
+    font-size:11px;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
 
+.tooltip.in {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
 
+.tooltip.top {
+    margin-top: -2px;
+}
 
+.tooltip.right {
+    margin-left: 2px;
+}
 
+.tooltip.bottom {
+    margin-top: 2px;
+}
 
+.tooltip.left {
+    margin-left: -2px;
+}
+
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+}
+
+.tooltip.left .tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+}
+
+.tooltip.right .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #fff;
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
