@@ -161,9 +161,33 @@ a:hover, a:active, a:focus {
 	margin: 0px auto;
 }
 
+.main .inner-ring .central h3 {
+	position: absolute;
+	bottom: 20px;
+	left: 8px;
+	text-align: center;
+	color: #000;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	height: 45px;
+	width: 216px;;
+	border-radius: 0 0 90px 90px;
+	-moz-border-radius: 0 0 90px 90px;
+    -webkit-border-radius: 0 0 90px 90px;
+    background-color: #fff;
+    line-height: 2.2;
+}
+
 /* Responsive */
 
 @media (max-width: 767px) {
+	
+	.main {
+		padding: 0;
+		margin: auto;
+	}
+	
 	.main .satellites {
 		margin-bottom: 30px;
 		text-align: center;
@@ -187,8 +211,7 @@ a:hover, a:active, a:focus {
 	
 	.tooltip {
     visibility: hidden !important;
-}
-	
+	}
 }
 
 /* Social Media Buttons */
@@ -377,3 +400,4 @@ a:hover, a:active, a:focus {
     width: 0;
     height: 0;
 }
+
