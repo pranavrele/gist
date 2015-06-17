@@ -327,8 +327,8 @@ a:hover, a:active, a:focus {
 }
 
 .tooltip.in {
-    opacity: 0.8;
-    filter: alpha(opacity=80);
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 .tooltip.top {
