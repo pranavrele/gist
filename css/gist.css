@@ -88,8 +88,11 @@ a:hover, a:active, a:focus {
 /* Main */
 
 .main {
-	margin: 60px auto;
-	padding: 30px auto;
+	margin: 20px 0px;
+	padding-top: 160px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
 }
 
 .main .outer-ring {
@@ -100,7 +103,6 @@ a:hover, a:active, a:focus {
 .main .orbital .satellites {
 	position: absolute;
 	display: block;
-	padding: 0px;
 	border-radius: 50%;
 	margin-top: -25px;
 	border: 3px solid #fff;
@@ -179,17 +181,12 @@ a:hover, a:active, a:focus {
     line-height: 2.2;
 }
 
-.second {
-	padding: 20px;
+.main .description {
+	max-width: 1000px;
+	margin: 50px auto;
 }
 
-.second .description {
-	max-width: 600px;
-	margin: 20px auto;
-	padding: 0px;
-}
-
-.second .description h3 {
+.main .description h3 {
 	color: #fff;
 	font-size: 28px;
 	line-height: 38px;
@@ -201,13 +198,13 @@ a:hover, a:active, a:focus {
 	text-align: right;
 }
 
-.second .description .content {
+.main .description .content {
 	margin-left: 200px;
 	color: #fff;
 	padding-left: 24px;
 }
 
-.second .description .content p {
+.main .description .content p {
 	font-size: 16px;
 	line-height: 32px;
 	font-weight: 300;
@@ -219,7 +216,7 @@ a:hover, a:active, a:focus {
 @media (max-width: 767px) {
 	
 	.main {
-		padding: 0;
+		padding: 20px;
 		margin: auto;
 	}
 	
@@ -250,7 +247,7 @@ a:hover, a:active, a:focus {
 }
 
 @media(max-width: 530px) {
-	.second .description h3 {
+	.main .description h3 {
 		width: 100%;
 		float: none;
 		text-align: left;
@@ -260,7 +257,7 @@ a:hover, a:active, a:focus {
 		margin-bottom: 12px;
 	}
 	
-	.second .description .content {
+	.main .description .content {
 		margin-left: 0px;
 		padding-left: 0px;
 	}
