@@ -5,7 +5,6 @@
 */
 
 body {	
-	color: #666;
 	font-size: 13px;
 	line-height: 23px;
 	background: #fff;
@@ -89,8 +88,8 @@ a:hover, a:active, a:focus {
 /* Main */
 
 .main {
-	margin: 180px 0px;
-	padding: 50px 0px 0px 0px;
+	margin: 60px auto;
+	padding: 30px auto;
 }
 
 .main .outer-ring {
@@ -108,6 +107,7 @@ a:hover, a:active, a:focus {
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 
+/* CSS for all 8 possible satellites is provided in the event it is preferred or if orientation of the user image is to be changed */
 .main .orbital .satellites.s-one { top: 0%; right: 50%; margin-right: -25px } /* North */
 .main .orbital .satellites.s-two { top: 50%; right: 0%; margin-right: -25px } /* East */
 .main .orbital .satellites.s-three { top: 100%; right: 50%; margin-right: -25px } /* South */
@@ -179,6 +179,41 @@ a:hover, a:active, a:focus {
     line-height: 2.2;
 }
 
+.second {
+	padding: 20px;
+}
+
+.second .description {
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 0px;
+}
+
+.second .description h3 {
+	color: #fff;
+	font-size: 28px;
+	line-height: 38px;
+	padding-right: 24px;
+	font-weight: 300;
+	width: 200px;
+	float: left;
+	border-right: 4px solid rgba(255,255,255,0.5);
+	text-align: right;
+}
+
+.second .description .content {
+	margin-left: 200px;
+	color: #fff;
+	padding-left: 24px;
+}
+
+.second .description .content p {
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 300;
+	color: rgba(255,255,255,0.9);
+}
+
 /* Responsive */
 
 @media (max-width: 767px) {
@@ -211,6 +246,23 @@ a:hover, a:active, a:focus {
 	
 	.tooltip {
     visibility: hidden !important;
+	}
+}
+
+@media(max-width: 530px) {
+	.second .description h3 {
+		width: 100%;
+		float: none;
+		text-align: left;
+		border-bottom: 4px solid rgba(255,255,255,0.5);
+		border-right: 0px;
+		padding: 0px 0px 16px 0px;
+		margin-bottom: 12px;
+	}
+	
+	.second .description .content {
+		margin-left: 0px;
+		padding-left: 0px;
 	}
 }
 
