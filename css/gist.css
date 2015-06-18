@@ -17,7 +17,7 @@ body {
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;    
+    background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -92,7 +92,6 @@ a:hover, a:active, a:focus {
 	padding-top: 160px;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-bottom: 50px;
 }
 
 .main .outer-ring {
@@ -216,8 +215,7 @@ a:hover, a:active, a:focus {
 @media (max-width: 767px) {
 	
 	.main {
-		padding: 20px;
-		margin: auto;
+		padding: 0px 10px;
 	}
 	
 	.main .satellites {
@@ -232,7 +230,7 @@ a:hover, a:active, a:focus {
 	}
 	
 	.main .outer-ring .inner-ring {
-		padding: 0px 0px 0px 10px;
+		padding: 0px 0px 0px 0px;
 		border: 0;
 	}
 	
@@ -247,14 +245,20 @@ a:hover, a:active, a:focus {
 }
 
 @media(max-width: 530px) {
+	
+	.main .description {
+		margin: 0;
+		padding: 0;
+	}
+	
 	.main .description h3 {
 		width: 100%;
 		float: none;
 		text-align: left;
 		border-bottom: 4px solid rgba(255,255,255,0.5);
 		border-right: 0px;
-		padding: 0px 0px 16px 0px;
-		margin-bottom: 12px;
+		padding: 0px 0px 10px 0px;
+		margin-bottom: 5px;
 	}
 	
 	.main .description .content {
