@@ -361,6 +361,12 @@ a:hover, a:active, a:focus {
 	color: #fff;
 }
 
+.main .orbital a > i.btn-mail { color: #b72411 }
+.main .orbital a:hover > i.btn-mail {
+	background: #b72411;
+	color: #fff;
+}
+
 
 /* Tooltips */
 
