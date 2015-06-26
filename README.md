@@ -17,7 +17,7 @@ To set profile image find the following within the <body>  index.html:
 
 Add your profile picture to the img folder. Then either rename it "profile.png" or change the path in the code you found above. It is best to use .png as the extension for circular images as it provides transparent space around the image whereas .jpg will color transparent pixels white.
 
-There is also an h3 tag underneath. Change it to your name. No need to use all caps as the CSS will handle that. 
+There is also an h3-tag underneath. Change it to your name. No need to use all caps as the CSS will handle that. 
 
 ### Setting Background Image
 
@@ -37,7 +37,7 @@ To alter the social network satellites around your profile image find the follow
 ```html
 <div class="orbital">
 ```
-In the current setup the satellites are setup within a semi-circle. To change satellite placement change the name of the satellite from s-one to s-eight. The same procedure should be used to add more satellites using the existing "<a class="satellites s-number">" format.
+In the current setup the satellites are setup within a semi-circle. To change satellite placement change the name of the satellite from s-one to s-eight. The same procedure should be used to add more satellites using the existing "a class="satellites s-number" format.
 
 There is no need to alter the CSS as it is already done for all 8 possible satellites. To figure out which number satellites corresponds to which position find the following within gist.css:
 
@@ -55,7 +55,7 @@ There is no need to alter the CSS as it is already done for all 8 possible satel
 
 The icon pack used is [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/). Consult the link provided to see what's available.
 
-Each social network has a custom button color scheme associated with it. When changing the icon for a given social network also change the name of the button within the same "<i>" class to reflect the appropriate color scheme as such:
+Each social network has a custom button color scheme associated with it. When changing the icon for a given social network also change the name of the button within the same i-class to reflect the appropriate color scheme as such:
 
 ```html
 <i class="fa fa-twitter btn-twitter"></i>
