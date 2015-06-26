@@ -2,6 +2,8 @@
 
 Welcome to Gist: a simple Bootstrap vCard Theme.
 
+![Preview Image](http://pranavrele.github.io/gist/img/preview.png)
+
 [Live Demo](http://pranavrele.github.io/gist/)
 
 Many thanks to the folks over at [Unsplash](https://unsplash.com) for providing free to use high resolution photos.
