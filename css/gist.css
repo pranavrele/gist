@@ -284,6 +284,10 @@ a:hover, a:active, a:focus {
 		margin-left: 0px;
 		padding-left: 0px;
 	}
+	
+	.main .description h3 br {
+		display: none;
+	}
 }
 
 /* Social Media Buttons */
@@ -387,6 +391,12 @@ a:hover, a:active, a:focus {
 .main .orbital a > i.btn-mail { color: #b72411 }
 .main .orbital a:hover > i.btn-mail {
 	background: #b72411;
+	color: #fff;
+}
+
+.main .orbital a > i.btn-download { color: #4CAF50 }
+.main .orbital a:hover > i.btn-download {
+	background: #4CAF50;
 	color: #fff;
 }
 
