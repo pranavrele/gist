@@ -84,8 +84,6 @@ Footer:
 <footer class="footer animated fadeInUp">
 ```
 
-Please note animations may not work within Safari. Firefox and Chrome are receptive of animations.
-
 ### Contact Me
 
 If there are any bugs found or would like to request new additions please feel free to send me an [Email](mailto:pranavrele@gmail.com) or send me a message via [Twitter](https://twitter.com/pranavrele).
