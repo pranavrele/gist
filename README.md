@@ -2,7 +2,7 @@
 
 Welcome to Gist. It's time to ditch your paper card.
 
-[Live Demo](http://pranavrele.com/gist/)
+[Live Demo](http://pranavrele.github.io/gist/)
 
 ## Get Started
 
