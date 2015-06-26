@@ -2,6 +2,8 @@
 
 Welcome to Gist. It's time to ditch your paper card.
 
+[Live Demo](http://pranavrele.com/gist/)
+
 ## Get Started
 
 ### Setting Profile Image
