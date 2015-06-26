@@ -15,7 +15,7 @@ body {
 	background: #fff;
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	background-image: url('http://pranavrele.com/gist/img/background1.jpg'); /* Insert Background Image */
+	background-image: url('img/background.jpg'); /* Insert Background Image */
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
