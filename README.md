@@ -17,7 +17,7 @@ To set profile image find the following within the <body>  index.html:
 
 Add your profile picture to the img folder. Then either rename it "profile.png" or change the path in the code you found above. It is best to use .png as the extension for circular images as it provides transparent space around the image whereas .jpg will color transparent pixels white.
 
-There is also an "<h3>" tag underneath. Change it to your name. No need to use all caps as the CSS will handle that. 
+There is also an h3 tag underneath. Change it to your name. No need to use all caps as the CSS will handle that. 
 
 ### Setting Background Image
 
