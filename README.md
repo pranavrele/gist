@@ -1,14 +1,16 @@
 # Gist: vCard Theme
 
-Welcome to Gist. It's time to ditch your paper card.
+Welcome to Gist: a simple Bootstrap vCard Theme.
 
 [Live Demo](http://pranavrele.github.io/gist/)
+
+Many thanks to the folks over at [Unsplash](https://unsplash.com) for providing free to use high resolution photos.
 
 ## Get Started
 
 ### Setting Profile Image
 
-To set profile image find the following within the <body>  index.html:
+To set profile image find the following within the <body> of index.html:
 
 ```html
 <!-- Profile Picture - Alter the src path to the approriate file -->
@@ -39,7 +41,11 @@ To alter the social network satellites around your profile image find the follow
 ```html
 <div class="orbital">
 ```
-In the current setup the satellites are setup within a semi-circle. To change satellite placement change the name of the satellite from s-one to s-eight. The same procedure should be used to add more satellites using the existing "a class="satellites s-number" format.
+In the current setup the satellites are placed within a semi-circle. To change satellite placement change the name of a given satellite anywhere from s-one to s-eight. The same procedure should be used to add more satellites using the existing "a class="satellites s-number" format as shown below:
+
+```html
+<a class="satellites s-three" data-toggle="tooltip" data-placement="bottom" title="Download Theme" href="https://github.com/pranavrele/gist">
+```
 
 There is no need to alter the CSS as it is already done for all 8 possible satellites. To figure out which number satellites corresponds to which position find the following within gist.css:
 
@@ -63,7 +69,7 @@ Each social network has a custom button color scheme associated with it. When ch
 <i class="fa fa-twitter btn-twitter"></i>
 ``` 
 
-If a social network of your choice is missing a custom color scheme, please feel free to send me an [Email](mailto:pranavrele@gmail.com) or send me a message via [Twitter](https://twitter.com/pranavrele).
+If a social network of your choice is missing a custom color scheme, please feel free to send me an [Email](mailto:pranavrele@gmail.com) or message me via [Twitter](https://twitter.com/pranavrele).
 
 ### Setting Up Animations
 
