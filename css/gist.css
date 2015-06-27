@@ -231,6 +231,11 @@ a:hover, a:active, a:focus {
 
 /* Responsive */
 
+@media (max-width: 1024px) {
+
+}
+
+
 @media (max-width: 767px) {
 	
 	.main {
