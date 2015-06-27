@@ -92,8 +92,19 @@ Footer:
 <footer class="footer animated fadeInUp">
 ```
 
-### Contact Me
+## Contact Me
 
 If there are any bugs found or would like to request new additions please feel free to send me an [Email](mailto:pranavrele@gmail.com) or send me a message via [Twitter](https://twitter.com/pranavrele).
 
-Feel free to fork this repo and use this as a starting point. Enjoy.  
+Feel free to fork this repo and use this as a starting point. Enjoy.
+
+## Change Log
+
+### Version 0.2
+
+- Added custom button for Unsplash
+- Fixed alignment issues with devices in 1024px range
+
+### Version 0.1
+
+- Initial Commit  
