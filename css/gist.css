@@ -400,6 +400,12 @@ a:hover, a:active, a:focus {
 	color: #fff;
 }
 
+.main .orbital a > i.btn-unsplash { color: #000 }
+.main .orbital a:hover > i.btn-unsplash {
+	background: #000;
+	color: #fff;
+}
+
 /* Tooltips */
 
 .tooltip {
