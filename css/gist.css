@@ -261,6 +261,10 @@ a:hover, a:active, a:focus {
 	.tooltip {
     visibility: hidden !important;
 	}
+	
+	html.touch *:hover {
+    pointer-events: none !important;
+	}
 }
 
 @media(max-width: 530px) {
@@ -287,6 +291,10 @@ a:hover, a:active, a:focus {
 	
 	.main .description h3 br {
 		display: none;
+	}
+	
+	html.touch *:hover {
+    pointer-events: none !important;
 	}
 }
 
