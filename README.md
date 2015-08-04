@@ -1,6 +1,6 @@
 # Gist: vCard Theme
 
-Welcome to Gist: a simple Bootstrap vCard Theme.
+Welcome to Gist, a simple Bootstrap vCard Theme.
 
 ![Preview Image](http://pranavrele.github.io/gist/img/preview.png)
 
