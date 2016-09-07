@@ -117,6 +117,8 @@ To edit icon colors go to scss/5-base/_layout-base.scss. Find the following:
 	}
 ```
 
+When changing colors either pass a hex value where the current value sits or add the color as a variable in scss/5-base/_variables.scss. Then reference the variable. 
+
 ##### CSS Method
 
 To edit icon colors go to css/gist.css. Find the following:
