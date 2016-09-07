@@ -1,0 +1,214 @@
+// Base lyout - mobile
+// Bottom up schema
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	background: url(../img/background.jpg) no-repeat center center fixed;
+	@include background-size(cover);
+}
+
+html, body {
+	height: 100%;
+}
+
+/*-----------------
+ Main Container
+------------------*/
+.main-container {
+	@include outer-container(120em);
+	@include span-columns(12);
+	text-align: center;
+	min-height: 100%;
+	position: relative;
+	padding-bottom: 6em;
+}
+
+/*-----------------
+ Profile Name - Top
+------------------*/
+.profile-name {
+	@include span-columns(12 of 12);
+	text-align: center;
+	background-color: rgba($gist-dark-gray, 0.8);
+	@include box-shadow(em(1), em(1), em(1), $gist-dark-gray);
+	
+	h3 {
+		font-weight: 300;
+		font-size: 1.6em;
+		line-height: 2em;
+		letter-spacing: 0.35em;
+		text-transform: capitalize;
+	}
+}
+
+/*-----------------
+ Profile Image
+------------------*/
+.profile-image {
+	@include span-columns(12 of 12);
+	text-align: center;
+	width: 100%;
+	
+	img {
+		width: 90%;
+		margin: 1.2em 0 0.2em 0;
+		@include border($gist-light-gray, 4);
+		@include border-radius-single(50%);
+	}
+}
+
+/*-----------------
+ Social Icons
+------------------*/
+.social-media {
+	@include span-columns(12 of 12);
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	
+	a {
+		font-size: 2.5em;
+		@include link-color($gist-light-gray, $gist-dark-gray);
+		margin: 0.2em 0;
+		width: 33.3%;
+		float: left;
+	}
+
+	.icon-border {
+		color: $gist-light-gray;
+	}
+	
+	/* North */
+	.social-n {
+		.icon-color {
+			@include link-color($gist-red, $gist-light-gray);
+		}
+	}
+	
+	/* North West */
+	.social-nw {
+		.icon-color {
+			@include link-color($gist-dark-gray, $gist-light-gray);
+		}
+	}
+	
+	/* West */
+	.social-w {
+		.icon-color {
+			@include link-color($gist-light-blue, $gist-light-gray);
+		}
+	}
+	
+	/* South West */
+	.social-sw {
+		.icon-color {
+			@include link-color($gist-pink, $gist-light-gray);
+		}
+	}
+	
+	/* South */
+	.social-s {
+		.icon-color {
+			@include link-color($gist-blue, $gist-light-gray);
+		}
+	}
+	
+	/* South East */
+	.social-se {
+		.icon-color {
+			@include link-color($gist-green, $gist-light-gray);
+		}
+	}
+}
+
+/*-----------------
+ Tagline
+------------------*/
+.tagline {
+	@include span-columns(12 of 12);
+	text-align: center;
+	display: block;
+	margin: 0.4em auto;
+	padding: 0 1em;
+	
+	h3 {
+		border-top: em(4) solid rgba($gist-light-gray, 0.5);
+		font-weight: 300;
+		font-size: 1.4em;
+		line-height: 1.8em;
+		letter-spacing: 0.45em;
+		border-bottom: em(4) solid rgba($gist-light-gray, 0.5);
+	}
+}
+
+/*-----------------
+ Description
+------------------*/
+.description {
+	@include span-columns(12 of 12);
+	text-align: justify;
+	display: block;
+	margin: 0.6em auto;
+	padding: 0 1.2em;
+	
+	p {
+		font-size: 0.9em;
+		line-height: 1.8em;
+		font-weight: 300;
+	}
+}
+
+/*-----------------
+ Call to Action
+------------------*/
+.cta {
+	@include span-columns(12 of 12);
+	text-align: center;
+	background-color: rgba($gist-red, 0.8);
+	font-size: 1.15em;
+	line-height: 2em;
+	text-transform: capitalize;
+	@include box-shadow(em(2), em(1), em(1), $gist-dark-gray);
+	
+	a {
+		font-weight: 300;
+		letter-spacing: 0.15em;
+		@include link-color($gist-light-gray, lighten($gist-dark-gray, 50%));
+	}
+}
+
+/*-----------------
+ Footer
+------------------*/
+.copyright {
+	@include span-columns(12 of 12);
+	text-align: center;
+	background-color: rgba($gist-dark-gray, 0.8);
+	@include box-shadow(0, em(1), em(1), $gist-dark-gray);
+	
+	position: absolute;
+	bottom: 0;
+	height: 3.5em;
+	
+	a {
+		font-size: 0.8em;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 0.5em;
+		@include link-color($gist-light-gray, lighten($gist-dark-gray, 50%));
+	}
+	
+	p {
+		font-size: 0.8em;
+		font-weight: 300;
+	}
+}

@@ -1,0 +1,21 @@
+@include media($desktop) {
+	
+	.tagline {
+		@include span-columns(4 of 12);
+		
+	}
+	
+	.description {
+		@include span-columns(6 of 12);
+		
+		p {
+			line-height: 2.2em;
+		}
+	}
+	
+	.cta {
+		@include span-columns(5.5 of 12);
+		@include shift(3.5);
+		margin-top: 3.5em;
+	}
+}

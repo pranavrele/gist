@@ -1,0 +1,53 @@
+// Set background size
+@mixin background-size($size) {
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-o-background-size: $size;
+	background-size: $size;
+}
+
+// Set link color and state change color
+@mixin link-color($color, $state) {
+	color: $color;
+	&:active,
+	&:focus,
+	&:hover, {
+		color: $state;
+	}
+}
+
+// Set text highlight color
+@mixin highlight-color($color) {
+	::selection {
+		background: $color;
+	}
+	::-moz-selection {
+		background: $color;
+	}
+}
+
+// Set border color
+@mixin border($color, $size) {
+	border: em($size) solid $color;
+}
+
+// Set border Radius with single input value
+@mixin border-radius-single($radius) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+// Set border radius with multiple input values
+@mixin border-radius-multi($r1, $r2, $r3, $r4) {
+	-moz-border-radius: $r1 $r2 $r3 $r4;
+	-webkit-border-radius: $r1 $r2 $r3 $r4;
+	border-radius: $r1 $r2 $r3 $r4;
+}
+
+// Set box shadow
+@mixin box-shadow($r1, $r2, $r3, $color) {
+	-moz-box-shadow: $r1 $r2 $r3 $color;
+	-webkit-box-shadow: $r1 $r2 $r3 $color;
+	box-shadow: $r1 $r2 $r3 $color;
+}

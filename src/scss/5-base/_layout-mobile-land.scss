@@ -1,0 +1,10 @@
+@include media($mobile-landscape) {
+	
+	.profile-image {
+		padding: 0 0 5% 0;
+		
+		img {
+			width: 44%;
+		}
+	}
+}

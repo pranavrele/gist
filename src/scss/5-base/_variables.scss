@@ -1,0 +1,29 @@
+// Base Palette
+$gist-light-gray:     #eee;
+$gist-gray:           #757575;
+$gist-dark-gray:      #212121;
+
+// Accents Palette 
+$gist-red:            #b72411;
+$gist-light-blue:     #32c8de;
+$gist-pink:           #ff61e7;
+$gist-blue:           #2196F3;
+$gist-green:          #51d466;
+$gist-orange:         #f78153;
+$gist-purple:         #cb79e6;
+$gist-brown:          #795548;
+
+// Typography
+$base-font-size: 100%;
+$base-line-height: em(23);
+$base-font-family: 'Open Sans', sans-serif;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+// Breakpoints
+$mobile-portrait: new-breakpoint(min-width 20em);
+$mobile-landscape: new-breakpoint(min-width 30em);
+$tablet-portrait: new-breakpoint(min-width 37.5em);
+$desktop: new-breakpoint(min-width 64.063em);

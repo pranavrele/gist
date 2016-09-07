@@ -1,0 +1,36 @@
+/*-----------------------------------------------------------------
+GIST: VCARD TEMPLATE
+@author: Pranav Rele
+@version: 1.0
+TABLE OF CONTENTS
+1. Normalize 
+2. Font-Awesome
+3. Gist
+4. Custom
+*Bourbon + Neat
+------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------
+	1.	NORMALIZE
+------------------------------------------------------------------*/
+@import "1-normalize-scss/normalize/import-now";
+@import "2-bourbon/bourbon";
+@import "3-neat/neat";
+/*-----------------------------------------------------------------
+	2.	FONT-AWESOME
+------------------------------------------------------------------*/
+@import "4-font-awesome/font-awesome";
+/*-----------------------------------------------------------------
+	3.	GIST
+			A. Typography
+			B. Base Layout - Mobile
+			C. Layout - Mobile Landscape
+			D. Layout - Tablet Portrait
+			E. Layout - Desktop
+------------------------------------------------------------------*/
+@import "5-base/base"; 
+/*-----------------------------------------------------------------
+	4.	CUSTOM
+		
+		*Your custom CSS goes here
+------------------------------------------------------------------*/

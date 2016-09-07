@@ -1,3 +1,4 @@
 config.codekit
-gist-min.js
+.codekit-cache
+.sass-cache/
 README.html

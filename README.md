@@ -1,95 +1,151 @@
 # Gist: vCard Theme
 
-Welcome to Gist, a simple Bootstrap vCard Theme.
+Welcome to Gist, a simple vCard Theme. Gist is designed to be a central hub for individuals who maintain portfolios and/or blogs  that are decoupled from their central site. 
 
-![Preview Image](http://pranavrele.github.io/gist/img/preview.png)
+![Preview Image](http://pranavrele.github.io/gist/src/img/demo.png)
 
 [Live Demo](http://pranavrele.github.io/gist/)
 
-Many thanks to the folks over at [Unsplash](https://unsplash.com) for providing free to use high resolution photos.
-
 ## Get Started
+
+Note1: Use the index.html within the src directory. The index.html outside of src is for demo purposes only. 
+
+Note2: For demo purposes all css and javascript has been minified. However, the full expanded versions are provided within the src directory to be processed however you’d like. 
 
 ### Setting Profile Image
 
 To set profile image find the following within the <body> of index.html:
 
 ```html
-<!-- Profile Picture - Alter the src path to the approriate file -->
-<img class="img-responsive" src="/img/profile.png" alt="">
-<!-- Name -->
-<h3>Lorem Ipsum</h3>
+<div class=“profile-image”>
+	<img src=“img/profile.png” alt=“”>
+</div>
 ```
 
 Add your profile picture to the img folder. Then either rename it "profile.png" or change the path in the code you found above. It is best to use .png as the extension for circular images as it provides transparent space around the image whereas .jpg will color transparent pixels white.
 
-There is also an h3-tag underneath. Change it to your name. No need to use all caps as the CSS will handle that. 
-
 ### Setting Background Image
 
-To set the background image find the body settings within gist.css:
+Add the image you would like to the img folder. Then either rename the image to “background.jpg” or change the file path. The .jpg extension works best here in order to keep file sizes smaller and ensure faster load times.
+
+#### SCSS Method
+
+To set the background image find the following block within: scss/5-base/_layout-base.scss
 
 ```css
-background-image: url('/img/background.jpg'); /* Insert Background Image */
+body {
+	background: url(../img/background.jpg) no-repeat center center fixed;
+	@include background-size(cover);
+}
 ```
 
-Next add the image you would like to the img folder. Then either rename the image to "background.jpg" or change the file path. The .jpg extension works best here in order to keep file sizes smaller and ensure faster load times.
+#### CSS Method
 
+To set the background image find the following block within: css/gist.css
+
+```css
+body {
+  background: url(../img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+```
 
 ### Setting Up Social Sphere
 
-To alter the social network satellites around your profile image find the following within index.html:
+#### Set Links and Icons
+
+First find the following within index.html:
 
 ```html
-<div class="orbital">
-```
-In the current setup the satellites are placed within a semi-circle. To change satellite placement change the name of a given satellite anywhere from s-one to s-eight. The same procedure should be used to add more satellites using the existing "a class="satellites s-number" format as shown below:
-
-```html
-<a class="satellites s-three" data-toggle="tooltip" data-placement="bottom" title="Download Theme" href="https://github.com/pranavrele/gist">
+<div class=“social-media”>
 ```
 
-There is no need to alter the CSS as it is already done for all 8 possible satellites. To figure out which number satellites corresponds to which position find the following within gist.css:
-
-```css
-/* CSS for all 8 possible satellites is provided in the event it is preferred or if orientation of the user image is to be changed */
-.main .orbital .satellites.s-one { top: 0%; right: 50%; margin-right: -25px } /* North */
-.main .orbital .satellites.s-two { top: 50%; right: 0%; margin-right: -25px } /* East */
-.main .orbital .satellites.s-three { top: 100%; right: 50%; margin-right: -25px } /* South */
-.main .orbital .satellites.s-four { top: 50%; left: 0%; margin-left: -25px } /* West */
-.main .orbital .satellites.s-five { top: 85%; right: 14%; margin-right: -25px } /* South East */
-.main .orbital .satellites.s-six { top: 15%; right: 14%; margin-right: -25px } /* North East */
-.main .orbital .satellites.s-seven { top: 15%; left: 14%; margin-left: -25px } /* North West */
-.main .orbital .satellites.s-eight { top: 85%; left: 14%; margin-left: -25px } /* South West */
-```
+To change the icon find the third i class in each stack and modify the icon used.
 
 The icon pack used is [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/). Consult the link provided to see what's available.
 
-Each social network has a custom button color scheme associated with it. When changing the icon for a given social network also change the name of the button within the same i-class to reflect the appropriate color scheme as such:
+#### Change Icon Colors
 
-```html
-<i class="fa fa-twitter btn-twitter"></i>
-``` 
+##### SCSS Method
 
-If a social network of your choice is missing a custom color scheme, please feel free to send me an [Email](mailto:pranavrele@gmail.com) or message me via [Twitter](https://twitter.com/pranavrele).
+To edit icon colors go to scss/5-base/_layout-base.scss. Find the following:
 
-### Setting Up Animations
-
-Animations are derived from [animate.css](https://daneden.github.io/animate.css/). Consult the link provided to see what's available. To implement animations find the following lines within index.html:
-
-Profile Picture:
-```html
-<div class="col-md-4 animated fadeInLeft">
+```css
+	/* North */
+	.social-n {
+		.icon-color {
+			@include link-color($gist-red, $gist-light-gray);
+		}
+	}
+	
+	/* North West */
+	.social-nw {
+		.icon-color {
+			@include link-color($gist-dark-gray, $gist-light-gray);
+		}
+	}
+	
+	/* West */
+	.social-w {
+		.icon-color {
+			@include link-color($gist-light-blue, $gist-light-gray);
+		}
+	}
+	
+	/* South West */
+	.social-sw {
+		.icon-color {
+			@include link-color($gist-pink, $gist-light-gray);
+		}
+	}
+	
+	/* South */
+	.social-s {
+		.icon-color {
+			@include link-color($gist-blue, $gist-light-gray);
+		}
+	}
+	
+	/* South East */
+	.social-se {
+		.icon-color {
+			@include link-color($gist-green, $gist-light-gray);
+		}
+	}
 ```
 
-Description:
-```html
-<div class="col-md-8 col-sm-12 col-xs-12 animated fadeInRight">
-```
+##### CSS Method
 
-Footer:
-```html
-<footer class="footer animated fadeInUp">
+To edit icon colors go to css/gist.css. Find the following:
+
+```css
+.social-media .social-n .icon-color {
+    color: #b72411; }
+    .social-media .social-n .icon-color:active, .social-media .social-n .icon-color:focus, .social-media .social-n .icon-color:hover {
+      color: #eee; }
+.social-media .social-nw .icon-color {
+    color: #212121; }
+    .social-media .social-nw .icon-color:active, .social-media .social-nw .icon-color:focus, .social-media .social-nw .icon-color:hover {
+      color: #eee; }
+.social-media .social-w .icon-color {
+    color: #32c8de; }
+    .social-media .social-w .icon-color:active, .social-media .social-w .icon-color:focus, .social-media .social-w .icon-color:hover {
+      color: #eee; }
+.social-media .social-sw .icon-color {
+    color: #ff61e7; }
+    .social-media .social-sw .icon-color:active, .social-media .social-sw .icon-color:focus, .social-media .social-sw .icon-color:hover {
+      color: #eee; }
+.social-media .social-s .icon-color {
+    color: #2196F3; }
+    .social-media .social-s .icon-color:active, .social-media .social-s .icon-color:focus, .social-media .social-s .icon-color:hover {
+      color: #eee; }
+.social-media .social-se .icon-color {
+    color: #51d466; }
+    .social-media .social-se .icon-color:active, .social-media .social-se .icon-color:focus, .social-media .social-se .icon-color:hover {
+      color: #eee; }
 ```
 
 ## Contact Me
@@ -98,7 +154,20 @@ If there are any bugs found or would like to request new additions please feel f
 
 Feel free to fork this repo and use this as a starting point. Enjoy.
 
+## Thank You
+
+Many thanks to the folks over at [Unsplash](https://unsplash.com) for providing free to use high resolution photos.
+
 ## Change Log
+
+### Version 1.0
+
+-Shifted from Bootstrap to Bourbon Neat grid system
+-Schema changed to Bottom-Up
+-Added Sass support
+-Added Profile Name to top to clear up Profile Image
+-Added CTA section prior to footer
+-Corrected Mobile and Tablet misalignment issues
 
 ### Version 0.2
 
@@ -107,8 +176,4 @@ Feel free to fork this repo and use this as a starting point. Enjoy.
 
 ### Version 0.1
 
-- Initial Commit  
-
-
-*TEST* *PLEASE IGNORE*
-*TEST2* *PLEASE IGNORE*
+- Initial Commit

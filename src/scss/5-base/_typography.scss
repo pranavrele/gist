@@ -1,0 +1,77 @@
+body {
+  color: $gist-light-gray;
+  background: $gist-dark-gray;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $gist-light-gray;
+  font-family: $base-font-family;
+  font-weight: 600;
+  margin: em(2) 0em;
+  padding: 0em;
+}
+
+h1 {
+  font-size: em(30);
+  line-height: em(45);
+}
+
+h2 {
+  font-size: em(25);
+  line-height: em(40);
+}
+
+h3 {
+  font-size: em(22);
+  line-height: em(37);
+}
+
+h4 {
+  font-size: em(18);
+  line-height: em(33);
+}
+
+h5 {
+  font-size: em(15);
+  line-height: em(30);
+}
+
+h6 {
+  font-size: em(13);
+  line-height: em(28);
+}
+
+p {
+  margin: em(2) 0em;
+  padding: 0em;
+  margin-bottom: em(5);
+  line-height: em(28);
+}
+
+a {
+  text-decoration: none;
+  color: gist-dark-gray;
+  transition: color $base-duration $base-timing;
+  
+  &:active,
+  &:focus,
+  &:hover, {
+    color: lighten($gist-dark-gray, 30%);
+  }
+}
+
+hr {
+  margin: em(10) 0em;
+  padding: 0em;
+  border-top: 0em;
+  border-bottom: em(1) solid $gist-dark-gray;
+}
