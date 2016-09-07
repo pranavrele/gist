@@ -162,12 +162,12 @@ Many thanks to the folks over at [Unsplash](https://unsplash.com) for providing 
 
 ### Version 1.0
 
--Shifted from Bootstrap to Bourbon Neat grid system
--Schema changed to Bottom-Up
--Added Sass support
--Added Profile Name to top to clear up Profile Image
--Added CTA section prior to footer
--Corrected Mobile and Tablet misalignment issues
+- Shifted from Bootstrap to Bourbon Neat grid system
+- Schema changed to Bottom-Up
+- Added Sass support
+- Added Profile Name to top to clear up Profile Image
+- Added CTA section prior to footer
+- Corrected Mobile and Tablet misalignment issues
 
 ### Version 0.2
 
