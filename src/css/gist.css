@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*-----------------------------------------------------------------
-GIST: VCARD TEMPLATE
+GIST: VCARD THEME
 @author: Pranav Rele
 @version: 1.0
 TABLE OF CONTENTS
@@ -606,35 +606,30 @@ html {
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
 
@@ -643,7 +638,8 @@ html {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -3401,6 +3397,7 @@ p {
 a {
   text-decoration: none;
   color: gist-dark-gray;
+  -webkit-transition: color 150ms ease;
   transition: color 150ms ease;
 }
 a:active, a:focus, a:hover {
@@ -3429,9 +3426,6 @@ html {
 
 body {
   background: url(../img/background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -3474,8 +3468,6 @@ html, body {
   width: 100%;
   text-align: center;
   background-color: rgba(33, 33, 33, 0.8);
-  -moz-box-shadow: 0.0625em 0.0625em 0.0625em #212121;
-  -webkit-box-shadow: 0.0625em 0.0625em 0.0625em #212121;
   box-shadow: 0.0625em 0.0625em 0.0625em #212121;
 }
 .profile-name:last-child {
@@ -3507,8 +3499,6 @@ html, body {
   width: 90%;
   margin: 1.2em 0 0.2em 0;
   border: 0.25em solid #eee;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -3643,8 +3633,6 @@ html, body {
   font-size: 1.15em;
   line-height: 2em;
   text-transform: capitalize;
-  -moz-box-shadow: 0.125em 0.0625em 0.0625em #212121;
-  -webkit-box-shadow: 0.125em 0.0625em 0.0625em #212121;
   box-shadow: 0.125em 0.0625em 0.0625em #212121;
 }
 .cta:last-child {
@@ -3669,8 +3657,6 @@ html, body {
   width: 100%;
   text-align: center;
   background-color: rgba(33, 33, 33, 0.8);
-  -moz-box-shadow: 0 0.0625em 0.0625em #212121;
-  -webkit-box-shadow: 0 0.0625em 0.0625em #212121;
   box-shadow: 0 0.0625em 0.0625em #212121;
   position: absolute;
   bottom: 0;
